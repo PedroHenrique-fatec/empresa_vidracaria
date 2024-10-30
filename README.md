@@ -1,4 +1,5 @@
 
+```markdown
 ---
 
 # Projeto Vidraçaria
@@ -8,27 +9,46 @@ Este projeto implementa um sistema de gerenciamento para uma vidraçaria, onde �
 ## Estrutura do Projeto
 
 ```plaintext
+-public
+│   ├── styles
+│   │    └── style.css            # Arquivo de estilo principal
+│   └── index.html                # Página inicial da aplicação
+
 -src
 │
 ├── Classes
 │   ├── Pessoas
-│   │   ├── Cliente.js         # Classe para o cliente, com atributos e métodos relacionados a compras
-│   │   ├── Funcionario.js     # Classe para o funcionário, incluindo métodos para realizar serviços e vendas
-│   │   └── Pessoa__temp.js    # Classe base para Pessoa, que serve como modelo para Cliente e Funcionario
+│   │   ├── Cliente.js            # Classe para o cliente, com atributos e métodos relacionados a compras
+│   │   ├── Funcionario.js        # Classe para o funcionário, incluindo métodos para realizar serviços e vendas
+│   │   └── Pessoa__temp.js       # Classe base para Pessoa, que serve como modelo para Cliente e Funcionario
 │   │
 │   ├── Produtos
-│   │   ├── Produto.js         # Classe Produto, representando um item básico para venda
-│   │   ├── Servico.js         # Classe Servico, que define serviços oferecidos pela vidraçaria
-│   │   └── Vidro.js           # Classe Vidro, um tipo específico de Produto
+│   │   ├── Produto.js            # Classe Produto, representando um item básico para venda
+│   │   ├── Servico.js            # Classe Servico, que define serviços oferecidos pela vidraçaria
+│   │   └── Vidro.js              # Classe Vidro, um tipo específico de Produto
 │
 ├── Funcoes
-│   └── Cadastro
-│       ├── cadastro_cliente.js      # Função para cadastrar clientes e armazená-los nos vetores apropriados
-│       ├── cadastro_funcionario.js  # Função para cadastrar funcionários
-│       ├── cadastro_servico.js      # Função para cadastrar serviços
-│       └── cadastro_vidro.js        # Função para cadastrar vidros como produtos
-│
-└── app.js                     # Arquivo principal que inicializa o sistema e realiza operações de exemplo
+│   ├── Cadastro
+│   │   ├── cadastro_cliente.js         # Função para cadastrar clientes e armazená-los nos vetores apropriados
+│   │   ├── cadastro_funcionario.js     # Função para cadastrar funcionários
+│   │   ├── cadastro_servico.js         # Função para cadastrar serviços
+│   │   └── cadastro_vidro.js           # Função para cadastrar vidros como produtos
+│   │
+│   ├── Limpeza de Campos
+│   │   ├── limparCampoCliente.js       # Função para limpar os campos de cadastro de clientes
+│   │   ├── limparCampoFuncionario.js   # Função para limpar os campos de cadastro de funcionários
+│   │   ├── limparCampoServico.js       # Função para limpar os campos de cadastro de serviços
+│   │   └── limparCampoVidro.js         # Função para limpar os campos de cadastro de vidros
+│   │
+│   ├── Modal
+│   │   ├── mostrarModal.js             # Função para exibir o modal especificado
+│   │   └── ocultarModal.js             # Função para ocultar os modais
+│   │
+│   └── Validacao
+│       ├── validacaoEmail.js           # Função para validar o email dos usuários
+│       └── validacaoNome.js            # Função para validar o nome dos usuários
+
+└── app.js                               # Arquivo principal que inicializa o sistema e realiza operações de exemplo
 ```
 
 ## Funcionalidades
@@ -36,6 +56,7 @@ Este projeto implementa um sistema de gerenciamento para uma vidraçaria, onde �
 - **Cadastro de Pessoas**: Clientes e funcionários são cadastrados e armazenados em vetores, permitindo o acesso centralizado a todos os dados de pessoas no sistema.
 - **Cadastro de Produtos e Serviços**: Produtos (vidros) e serviços oferecidos pela vidraçaria podem ser registrados e gerenciados.
 - **Execução de Operações**: Clientes podem comprar produtos e funcionários podem realizar serviços para os clientes, simulando transações e operações reais.
+- **Modais de Cadastro**: Exibição de modais para cada tipo de cadastro, com a opção de exibir e ocultar conforme necessidade.
 
 ## Como Executar o Projeto
 
@@ -65,4 +86,9 @@ Para adicionar novos tipos de pessoas, produtos ou serviços, você pode:
 
 A organização modular facilita a adição de novas funcionalidades e promove uma estrutura limpa e escalável, separando cada responsabilidade em seu próprio módulo.
 
----"# empresa_vidracaria" 
+---
+
+"# empresa_vidracaria" 
+``` 
+
+Esse `README.md` resume a estrutura, funcionalidades e instruções para uso do projeto e também serve de base para expansão futura, alinhado com as mudanças feitas.
