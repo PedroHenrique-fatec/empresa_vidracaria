@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <title>Empresa - Vidraçaria JS</title>
+  </head>
+  <body>
+    <header>
+      <h1>CRUD - Empresa Vidraçaria</h1>
+
+      <nav>
+        <article class="group-nav">
+          <button id="mostrarModalCliente">Cadastrar Cliente</button>
+        </article>
+        <article class="group-nav">
+          <button id="mostrarModalFuncionario">Cadastrar Funcionario</button>
+        </article>
+        <article class="group-nav">
+          <button id="mostrarModalVidro">Cadastrar Vidro</button>
+        </article>
+        <article class="group-nav">
+          <button id="mostrarModalServico">Cadastrar Servico</button>
+        </article>
+      </nav>
+    </header>
+
+    <main>
+      <section class="modals">
+        <article id="modalCliente">
+          <div class="inputGroup">
+            <label for="idCliente">Insira o id do cliente: </label>
+            <input type="number" name="idCliente" id="idCliente" />
+          </div>
+          <div class="inputGroup">
+            <label for="nomeCliente">Insira o nome do cliente: </label>
+            <input type="text" id="nomeCliente" name="nomeCliente" />
+          </div>
+          <div class="inputGroup">
+            <label for="telefoneCliente">Insira o telefone do cliente: </label>
+            <input type="text" name="telefoneCliente" id="telefoneCliente" />
+          </div>
+          <div class="inputGroup">
+            <label for="emailCliente">Insira o email do cliente: </label>
+            <input type="email" name="emailCliente" id="emailCliente" />
+          </div>
+          <div class="inputGroup">
+            <label for="cpfCliente">Insira o cpf do cliente: </label>
+            <input type="text" name="cpfCliente" id="cpfCliente" />
+          </div>
+          <div class="inputGroup">
+            <label for="cepCliente">Insira o cep do cliente: </label>
+            <input type="text" name="cepCliente" id="cepCliente" />
+          </div>
+          <div class="inputGroup">
+            <input type="submit" value="Cadastrar Cliente" id="buttonCadastrarCliente" />
+          </div>
+        </article>
+
+        <article id="modalFuncionario">
+            <div class="inputGroup">
+              <label for="idFuncionario">Insira o id do funcionário: </label>
+              <input type="number" name="idFuncionario" id="idFuncionario" />
+            </div>
+            <div class="inputGroup">
+              <label for="nomeFuncionario">Insira o nome do funcionário: </label>
+              <input type="text" id="nomeFuncionario" name="nomeFuncionario" />
+            </div>
+            <div class="inputGroup">
+              <label for="telefoneFuncionario">Insira o telefone do funcionário: </label>
+              <input type="text" name="telefoneFuncionario" id="telefoneFuncionario" />
+            </div>
+            <div class="inputGroup">
+              <label for="emailFuncionario">Insira o email do funcionário: </label>
+              <input type="email" name="emailFuncionario" id="emailFuncionario" />
+            </div>
+            <div class="inputGroup">
+              <label for="cargoFuncionario">Insira o cargo do funcionário: </label>
+              <input type="text" name="cargoFuncionario" id="cargoFuncionario" />
+            </div>
+            <div class="inputGroup">
+              <label for="dataAdmissaoFuncionario">Insira a data de admissão: </label>
+              <input type="date" name="dataAdmissaoFuncionario" id="dataAdmissaoFuncionario" />
+            </div>
+            <div class="inputGroup">
+              <input type="submit" value="Cadastrar Funcionário" id="buttonCadastrarFuncionario" />
+            </div>
+          </article>
+
+          <article id="modalServico">
+            <div class="inputGroup">
+              <label for="idServico">Insira o id do serviço: </label>
+              <input type="number" name="idServico" id="idServico" />
+            </div>
+            <div class="inputGroup">
+              <label for="nomeServico">Insira o nome do serviço: </label>
+              <input type="text" id="nomeServico" name="nomeServico" />
+            </div>
+            <div class="inputGroup">
+              <label for="descricaoServico">Insira a descrição do serviço: </label>
+              <input type="text" name="descricaoServico" id="descricaoServico" />
+            </div>
+            <div class="inputGroup">
+              <label for="precoServico">Insira o preço do serviço: </label>
+              <input type="number" name="precoServico" id="precoServico" />
+            </div>
+            <div class="inputGroup">
+              <input type="submit" value="Cadastrar Serviço" id="buttonCadastrarServico" />
+            </div>
+          </article>
+
+          <article id="modalVidro">
+            <div class="inputGroup">
+              <label for="idVidro">Insira o id do vidro: </label>
+              <input type="number" name="idVidro" id="idVidro" />
+            </div>
+            <div class="inputGroup">
+              <label for="nomeVidro">Insira o nome do vidro: </label>
+              <input type="text" id="nomeVidro" name="nomeVidro" />
+            </div>
+            <div class="inputGroup">
+              <label for="descricaoVidro">Insira a descrição do vidro: </label>
+              <input type="text" name="descricaoVidro" id="descricaoVidro" />
+            </div>
+            <div class="inputGroup">
+              <label for="precoVidro">Insira o preço do vidro: </label>
+              <input type="number" name="precoVidro" id="precoVidro" />
+            </div>
+            <div class="inputGroup">
+              <label for="qtdEstoqueVidro">Insira a quantidade em estoque: </label>
+              <input type="number" name="qtdEstoqueVidro" id="qtdEstoqueVidro" />
+            </div>
+            <div class="inputGroup">
+              <label for="dimensaoVidro">Insira a dimensão do vidro: </label>
+              <input type="text" name="dimensaoVidro" id="dimensaoVidro" />
+            </div>
+            <div class="inputGroup">
+              <label for="tipoVidro">Insira o tipo do vidro: </label>
+              <input type="text" name="tipoVidro" id="tipoVidro" />
+            </div>
+            <div class="inputGroup">
+              <input type="submit" value="Cadastrar Vidro" id="buttonCadastrarVidro" />
+            </div>
+          </article>
+          
+      </section>
+    </main>
+
+    <script type="module" src="../src/app.js"></script>
+  </body>
+</html>

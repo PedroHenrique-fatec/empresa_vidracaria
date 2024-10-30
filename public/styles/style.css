@@ -1,0 +1,143 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    height: 100%;
+  }
+  
+  /* Estilo do corpo */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo da navegação */
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .group-nav {
+    margin: 10px;
+  }
+  
+  button {
+    background: #ffffff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background: #e7e7e7;
+    transform: translateY(-2px);
+  }
+  
+  /* Estilo do main */
+  main {
+    padding: 20px;
+    /* height: 100%; */
+  }
+  
+  /* Estilo dos modais */
+  .modals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .modals article {
+    width: 700px;
+    position: absolute;
+  }
+
+  .modals article#modalCliente {
+    display: none;
+  }
+
+  .modals article#modalFuncionario {
+    display: none;
+  }
+
+  .modals article#modalServico {
+    display: none;
+  }
+
+  .modals article#modalVidro {
+    display: none;
+  }
+  /* Estilo dos grupos de entrada */
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Estilo do botão de submissão */
+  input[type="submit"] {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
